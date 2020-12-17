@@ -1,0 +1,33 @@
+.bg-dark{
+    max-width: 100%;
+    text-align: center;
+
+}
+
+h1{
+    color: white;
+}
+
+.card{
+    padding: 10px;
+}
+
+.col-8{
+    padding: 10px;
+    
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.history{
+    padding: 10px;
+   
+}
+
+.results{
+    padding: 10px;
+}
+   

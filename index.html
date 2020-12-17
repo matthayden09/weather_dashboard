@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
 </head>
-<body>
-  
-    
 
+<body>
+    <div class="container">
+        <div class="row bg-dark">
+            <h1 class="page-heading">Weather Dashboard</h1>
+
+        </div>
+        <div class="row">
+            <div class="card col-4">
+                <div class="mb-3">
+                    <label class="form-label">Search for a City</label>
+                    <input class="form-control" id="searchCity" placeholder="Enter city name">
+                </div>
+                <button type="button" class="btn btn-outline-primary" id="searchBtn">Search</button>
+                <button type="button" class="btn btn-outline-secondary" id="clearBtn">Clear History</button>
+                <div class="row history" id="history">
+                    <p>test</p>
+                </div>
+            </div>
+            <div class="col-8" id="showResults">
+                <div class="row results" id="cityName">
+                    <p>City:</p>
+                </div>
+                <div class="row results" id="date">
+                    <p>Date:</p>
+                </div>
+                <div class="row results" id="conditionsIcon">
+
+                </div>
+                <div class="row results" id="temperature">
+                    <p>Temperature:</p>
+                </div>
+                <div class="row results" id="humidity">
+                    <p>Humidity:</p>
+                </div>
+                <div class="row results" id="windSpeed">
+                    <p>Wind Speed:</p>
+                </div>
+                <div class="row results" id="uvIndex">
+                    <p>UV Index:</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
 
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
