@@ -12,56 +12,57 @@
 
 <body>
     <div class="container">
-        <div class="row bg-dark">
-            <h1 class="page-heading">Weather Dashboard</h1>
+        <header class="jumbotron">
+            <h1 class="display-3">Weather Dashboard</h1>
+        </header>
 
-        </div>
         <div class="row">
-            <div class="card col-4">
+            <div class="card col-4 input">
                 <div class="mb-3">
                     <label class="form-label">Search for a City</label>
                     <input class="form-control" id="searchCity" placeholder="Enter city name">
+                    <button type="button" class="btn btn-outline-primary" id="searchBtn">Search</button>
+                    <button type="button" class="btn btn-outline-secondary" id="clearBtn">Clear History</button>
                 </div>
-                <button type="button" class="btn btn-outline-primary" id="searchBtn">Search</button>
-                <button type="button" class="btn btn-outline-secondary" id="clearBtn">Clear History</button>
                 <div class="row history" id="history">
-                    <p>test</p>
+                    <ul>test</ul>
                 </div>
             </div>
-            <div class="col-8" id="showResults">
-                <div class="row results" id="cityName">
-                    <p>City:</p>
-                </div>
-                <div class="row results" id="date">
-                    <p>Date:</p>
-                </div>
-                <div class="row results" id="conditionsIcon">
-
+            <div class=" card col-7 currentForecast" id="currentForecast">
+                <h2>Current Forecast</h2>
+                <p id="currentDay"></p>
+                <div class="row results" id="city">
+                    
                 </div>
                 <div class="row results" id="temperature">
-                    <p>Temperature:</p>
+                    
                 </div>
                 <div class="row results" id="humidity">
-                    <p>Humidity:</p>
+                    
                 </div>
                 <div class="row results" id="windSpeed">
-                    <p>Wind Speed:</p>
+                    
                 </div>
                 <div class="row results" id="uvIndex">
-                    <p>UV Index:</p>
+                    
                 </div>
             </div>
         </div>
 
-
-
-
-
+        <div class="card row fiveDayForecast" id="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+        </div>
     </div>
 
 
 
 
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 
