@@ -33,7 +33,7 @@ $('#searchBtn').on('click', function (event) {
         $('#windSpeed').text("Wind Speed: " +
         weather.wind.speed)
 
-        var uvURL = 'http://api.openweathermap.org/data/2.5/uvi?lat=' + weather.coord.lat + '&lon=' + weather.coord.lon + '&appid=' + apiKey + '&units=imperial'
+        var uvURL = 'https://api.openweathermap.org/data/2.5/uvi?lat=' + weather.coord.lat + '&lon=' + weather.coord.lon + '&appid=' + apiKey + '&units=imperial'
         
         // uv index ajax
         $.ajax({
